@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.movie {
+    margin-top: 50px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    transition: 250ms all;
+}
+
+section .imageContainer {
+    flex: 0 0 auto;
+}
+
+.content {
+    display: none;
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+
+
+.content-display {
+    display: block;
+}
+
+
+.content-display {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.content div {
+    margin: 10px;
+}
+
+
+#content-close {
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    padding: 10px;
+    /* width: 35px;; */
+    border: 1px solid lightgrey;
+    border-radius: 45%;
+    left: 20px;
+}
+
+
+.imageContainer {
+    transition: 250ms all;
+    width: 300px;
+}
+
+
+.imageContainer:hover {
+    margin-left: 0 40px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.imageContainer {
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.imageContainer img {
+    width: 100%;
+}
+
+.btn {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    outline: none;
+    min-height: 38px;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+}
+
+
+.form-control {
+    width: 760px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    outline: none;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+
+
+header {
+display:flex;
+padding: 30 px ;
+
+}
+
+nav {
+    width: 100%
+    
+}
+
+
+ul {
+    padding: 50;
+    margin: 100 50 0 0;
+    list-style-type: none;
+    overflow: hidden;
+    list-style-type:none;
+
+}
+
+
+li {
+    float: left;
+}
+
+
+.navbar img{ 
+    position:relative;
+    margin-top: 15px;
+    margin-left:50px;
+    width:50%;
+    width:300px ; 
+    height:200px;
+
+}
+
+nav a {
+    width: 100px;
+    display:block;
+    padding:20px 15px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray
+    
+    
+
+}
+nav a.normal {font-weight:bold;}
+
+nav a:hover {
+  background:lightblue;
+  transition:0.5s;
+  text-transform:uppercase;
+  list-style-type:none;
+}
+
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+	left: 20px;
+	top: 40px;
+  }
+  
+  
+
+
+
+  /* 弹窗后,网页的背景 */
+  #background {
+    /* 默认隐藏不显示 */
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   
+}
+
+/* 弹窗页面的背景 */
+#div1 {
+    /* 弹窗的背景颜色 */
+    background:white;
+    /* 弹出页面的宽度 */
+    width: 40%;
+
+    /* z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。 */
+    z-index: 1;
+    /* 弹窗的位置,左边数字为top距离,右边的为left距离 */
+    margin: 10% auto;
+}
+
+#div2 {
+    margin: auto;
+    /* 弹出页面高度,如果不固定高度,高度会以实际内容扩展 */
+    height: 150px;
+    padding: 100px;
+    background:white;
+    
+
+    /* 
+        属性规定当内容溢出元素框时发生的事情。
+        如果内容超出，则浏览器会显示滚动条以便查看其余的内容。
+    */
+    overflow: auto;
+}
+
+#close-button {
+    /* 鼠标放上去有游标 */
+    cursor: pointer;
+    /* 字体在最右边显示 */
+    /* float: right; */
+    font-size: 20px;
+}
